@@ -150,7 +150,7 @@ int main()
 {   
     //Parameters init and open the data file "28.txt", including memery set
     double Answer[2], SquarePoor[4];
-    FILE *fp,*fpResult = NULL;
+    FILE *fp = NULL;
     char *fileName = "28.txt";
     fp = fopen(fileName,"r");
     if(NULL == fp)
@@ -205,7 +205,6 @@ int main()
         no++;
       }
     }
-    fclose(fpResult);
     fclose(fp);
     return 0;
 }
